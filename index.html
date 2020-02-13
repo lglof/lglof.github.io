@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="kiera.css">
+</head>
+<body>
+    <div>
+        <title>
+            Hi bean
+        </title>
+        <div id="start">
+            <h1 id="stuck">
+                I couldn't figure out what nice to do for you for valentines, so I figured I should play to my strengths
+            </h1>
+            <div id="grid">
+                <div class="left">
+                    Things I'm good at:
+                    <ul>
+                        <li>Making things</li>
+                        <li>making things make sense</li>
+                        <li>Making people laugh</li>
+                        <li>A little bit of programming</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    Things I am not good at:
+                    <ul>
+                        <li>Making things be pretty</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>Without further ado:
+                <button onclick="start()">
+                    Let's Go!
+                </button>
+            </h3>
+        </div>
+        <div id="second">
+            <div class="grid">
+                <p class="left"> You, Kiera Email Mathers, make my heart soar like no other. </p>
+                <button class="right" onclick="emotional()">Next</button>
+            </div>
+            <div id="grid">
+                <div class="topRow">
+                    <p class="left">The way you have no idea what your face is doing during rugby</p>
+                    <img src="img/rugbyTongue.png" class="right"/>
+                </div>
+                <div class="topRow">
+                    <p class="left">Your infectious laugh</p>
+                    <img src="img/giggle.png" class="right"/>
+                </div>
+                <div class="topRow">
+                    <p class="left">The way your eyes light up when there's a puppy</p>
+                    <img src="img/carl.png" class="right" id="carl"/>
+                </div>
+                <div class="topRow">
+                    <p class="right">or a kitty</p>
+                    <img src="img/hope.jpg" class="right" id="carl"/>
+                </div>
+            </div>
+        </div>
+        <div id="third">
+            You make me feel like the most loved person alive. <br />
+            You know exactly how to cheer me up when I feel like nothing can go right. <br />
+            I've never met someone who makes me feel as safe and listened to as you. <br />
+            I love coming home to you at the end of the day. <br />
+            And I love how you listen to my stupid ramblings, and you laugh as my dumbassery.<br />
+            And I love being able to do these things for you as well. <br />
+            You're incredible. And I'm so glad to call you mine.<br />
+            <h2>Sometimes we have bad days</h2>
+            <img src="img/distress.jpeg"/><br />
+            But getting through those days with you just makes it all the better. <br />
+            You give me space and time to sort out my thoughts<br />
+            And you call me out when I'm being an ass<br />
+            And you explain how you're feeling and how I can do better next time<br />
+            <br />
+            You have more empathy and patience than anyone I've ever met, and I don't have the words to explain how good you are.<br />
+            <button onclick="oneMore()">One More!</button>
+        </div>
+        <div id="oneMore">
+            I know I'm not always the easiest to be around <br />
+            And I come with a lot of unique challenges<br />
+            <br />
+            I want to thank you for all your patience. I feel safe and respected with you. <br />
+            And there's no way to properly explain how loved you make me feel. <br /><br />
+            <img id="carl" src="img/heartEyes.jpg" /><br />
+            <button onclick="ILied()">I lied, one more</button>
+        </div>
+        <div id="actualLast">
+            So I have one last thing to say:
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <h1>Happy Valentines Day!</h1>
+        </div>
+    </div>
+</body>
+
+<script>
+
+function start(){
+    document.getElementById("start").style.display = "none";
+    document.getElementById("second").style.display = "block";
+}
+
+
+function emotional(){
+    document.getElementById("second").style.display = "none";
+    document.getElementById("third").style.display = "block";
+}
+
+function oneMore(){
+    document.getElementById("third").style.display = "none";
+    document.getElementById("oneMore").style.display = "block";
+}
+
+function ILied(){
+    document.getElementById("oneMore").style.display = "none";
+    document.getElementById("actualLast").style.display = "block";
+}
+
+</script>
+
+</html>
